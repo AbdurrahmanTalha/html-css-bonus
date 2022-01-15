@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative-Absolute</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            border:10px solid red;
+        }
+        .container{
+            position: relative;
+            border: 5px solid blue;
+        }
+        .box{
+            width:150px;
+            height:150px;
+            /* margin:10px; */
+        }
+        #box-1{
+            background-color: cornflowerblue;
+        }
+        /* #box-2{
+            background-color: rebeccapurple;
+            position: relative;
+            top:30px;
+            left:50px;
+        } */
+        #box-2{
+            background-color: rebeccapurple;
+            position: absolute;
+            top:0px;
+            left:50px;
+        }
+        #box-3{
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Explore Relative and Absolute One More Time</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum soluta eum inventore veritatis suscipit, placeat labore quis assumenda necessitatibus architecto pariatur voluptatem, nostrum magnam temporibus dolores officiis. Voluptatibus facilis, sunt quidem asperiores minima perspiciatis consequuntur nemo, odit numquam dolores est tenetur consequatur molestiae quo magnam ducimus voluptas. Minima, expedita autem!</p>
+
+    <div class="container">
+        <div class="box" id="box-1">BOX-1</div>
+        <div class="box" id="box-2">BOX-2</div>
+        <div class="box" id="box-3">BOX-3</div>
+    </div>
+</body>
+</html>
